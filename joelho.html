@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>HarmoFit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <div class="voltar">
+        <button class="voltar-btn" onclick="login()">
+            <img class='voltar-seta'src="./arrow-left.png" alt="">
+        </button>
+        <div class="prob">
+            Joelho
+        </div>
+    </div>
+        <label for="check" class="togButton"><svg xmlns="http://www.w3.org/2000/svg" class="time-svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 14c0 5.523-4.478 10-10 10s-10-4.477-10-10 4.478-10 10-10 10 4.477 10 10zm-2 0c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8 8-3.589 8-8zm-6-11.819v-2.181h-4v2.181c1.408-.238 2.562-.243 4 0zm6.679 3.554l1.321-1.321-1.414-1.414-1.407 1.407c.536.402 1.038.844 1.5 1.328zm-8.679 2.265v6h6c0-3.309-2.691-6-6-6z"/></svg></label>
+        <input type="checkbox" class="togCheck" id="check"/>
+        <div class="togContent">
+        <p>Faça o exercicio por 3 minutos.</p>
+        </div>
+    <div class="video-ombro">
+        <iframe src="./exerciciojoelho.mp4" autoplay loop class="ombro-video" frameborder="0"></iframe>
+    </div>
+        <div class="ava">
+            Descreva como se sente:
+           </div>
+       
+           <div class="area-aval">
+           
+               <label class="container-label">Senti alívio(leveza)
+                   <input type="checkbox" class="c1">
+                   <span class="checkmark"></span>
+               </label>
+               <label class="container-label"> Senti uma dor ponte-aguda
+                   <input type="checkbox" class="c1">
+                   <span class="checkmark"></span>
+               </label>
+               <label class="container-label">Senti uma dor espalhada
+                   <input type="checkbox" class="c1">
+                   <span class="checkmark"></span>
+               </label>
+               <label class="container-label">Nenhuma das alternativas
+                   <input type="checkbox" class="c1">
+                   <span class="checkmark"></span>
+               </label>
+           </div>
+   
+          <div class="confirmar">
+            <button class="confirmar-btn" id="acaoa" onclick="proxpag2()">Confirmar</button>
+          </div>
+       
+       </div>
+           <script type="text/javascript" src="index.js"></script>
+   
+   </body>
+   </html>

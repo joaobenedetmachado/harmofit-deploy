@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans:wght@500&display=swap');
+body {
+    background-color: #000000;
+    font: normal 18pt Arial;
+    margin: 0;
+    max-width: 600px;
+}
+
+.login-area {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    line-height: 50px;
+    text-align:center;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60%; /* posiciona na metade da tela */
+    margin-top: -140px; /* e retrocede metade da altura */
+    left: 50%; /* posiciona na metade da tela */
+    margin-left: -50%; /* e retrocede metade da largura */
+    background: #000000;
+    box-shadow: 1px 0px 16px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    animation: login-area 5s ease-out;
+}
+
+@keyframes login-area {
+    0% {
+        opacity: 0;
+        /*margin-top: 400px;*/
+    }
+
+    80% {
+        opacity: 0;
+        
+    }
+
+    100% {
+         opacity: 1;
+        /* margin-top: -140px;*/
+    }
+}
+
+.name {
+    margin-top: 40px;
+}
+
+.input-name {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    font-size: 20px;
+    width: 75%;
+    border-top:#edecf5;
+    border-left:#edecf5;
+    border-right:#edecf5;
+    color: white;
+
+}
+.video-logo {
+    width: 95%;
+    height: 300px;
+
+}
+
+
+.logo-video {
+    margin-top: 15%;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border-top: 0 none;
+    outline: 0;
+} 
+.input-psw {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    font-size: 20px;
+    width: 75%;
+    border-top:#edecf5;
+    border-left:#edecf5;
+    border-right:#edecf5;
+    color: #edecf5;;
+}
+
+.email {
+    margin-top: 50px;
+}
+
+#emailvalido {
+    color: #000000;
+    font-family:'Montserrat', sans-serif ;
+}
+
+.button {
+    background-color: #edecf5;;
+    border-top:#edecf5;
+    border-left:#edecf5;
+    border-right:#edecf5;
+    border-bottom:#edecf5;
+    width: 200px;
+    height: 40px;
+    border-radius: 9px;
+    font-size: 20px;
+    margin-top: 60px;
+    font-weight: bold;     
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    margin-top: 2px;
+}
+
+.button:active {
+    background-color: #484848;
+    border-top:#edecf5;
+    border-left:#edecf5;
+    border-right:#edecf5;
+    border-bottom:#edecf5;
+    width: 200px;
+    height: 40px;
+    border-radius: 9px;
+    font-size: 20px;
+    
+}
+header {
+    height: 300px;
+    width: 100%;
+}
+
+.img-img {
+    animation: img-img 4s ease-in-out;
+    width: 100%;
+    height: 200px;
+    top: 10%;
+    margin-top: 10%;
+
+}
+
+@keyframes img-img {
+    0% {
+        margin-top: 50%;
+        display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+        justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        
+    }
+
+    50% {
+        margin-top: 50%;
+        display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+        justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        
+    }
+
+    100% {
+         
+         
+    }
+
+}
+
+.header-2 {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 0;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    width: 100%;
+    height: 100px;
+    color:#edecf5;
+    margin: auto;
+    margin-top: 0px;
+}
+
+iframe {
+    margin: none;
+    border: none;
+}
+
+.video-ombro {
+    margin-top: 5%;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+}
+
+.ombro-video {
+    width: 95%;
+    height: 200px;
+}
+
+.ava {
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    padding: 10px 10px;
+    left: 7.5%; /* posiciona na metade da tela */
+    margin: auto;
+    margin-top: 10px;
+    position: absolute;
+    width: 80%;
+    color:#edecf5;
+    border-radius: 5px ;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17pt;
+}
+
+.avalicao {
+    z-index: 0;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    width: 100%;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---------------------------BOTAO LIKE-------------------------*/
+
+.button-like {
+    background-color: #000000;
+    border: none;
+    width: 80px; /*BOTAO NORMAL*/ 
+    height: 80px; /*BOTAO NORMAL*/
+
+}
+.button-like:active {
+    background-image: url(https://cdn.discordapp.com/attachments/993313433745367073/993322506612129802/abcabc.png);
+    width: 80px; /*BOTAO ATIVO*/ 
+    height: 80px; /*BOTAO ATIVO*/
+    
+}
+.like-div {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.like-png {
+    margin-left: -10px;
+    width: 80px;
+    height: 80px;
+}
+/*---------------------------BOTAO LIKE-------------------------*/
+
+
+
+/*---------------------------BOTAO DISLIKE-------------------------*/
+.dislike-png {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+}
+.button-dislike {
+    background-color: #000000;
+    border: none;
+    width: 80px; /*BOTAO NORMAL*/
+    height: 80px; /*BOTAO NORMAL*/
+}
+
+.button-dislike:active {
+    
+    width: 80px; /*BOTAO ATIVO*/
+    height: 80px; /*BOTAO ATIVO*/
+}
+
+.dislike-div {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(https://www.nicepng.com/png/detail/341-3416460_iphone-iphoneography-emoji-like-followme-ip-ajfonxd-love.png);
+}
+
+/*---------------------------BOTAO DISLIKE-------------------------*/
+
+
+.voltar-btn {
+    background-color: #000000;
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-bottom-right-radius: 9px;
+    box-shadow: 1px 0px 10px 6px rgba(0, 0, 0, 0.405);
+
+}
+
+.voltar-seta {
+    margin-top: 4px;
+    margin-left: -5px;
+    height: 40px;
+    width: 40px;
+
+}
+
+.background-problema {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(179, 179, 109);
+}
+
+
+.area-aval {
+    font-size: 15pt;
+    color: #edecf5;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 30%;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: flex-start;  /*CENTRALIZAR NO MEIO DA BOX*/
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    gap: 1.3rem;
+    user-select: none;
+}
+
+.confirmar {
+    margin-top: 15%;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+}
+
+.confirmar-btn {
+    border: none;
+    background-color: #edecf5;
+    width: 120px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 12px;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+.confirmar-btn:active {
+    border: none;
+    background-color: rgb(111, 111, 111);
+    width: 120px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 9px;
+    font-weight: bolder;
+    
+}
+.prob {
+    color:#edecf5;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    user-select: none;
+
+}
+
+/*.form input {
+    display: none;
+
+}
+.form input + label:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 3px ;
+    background-color:#edecf5 ;
+    display: inline-block;
+    border: 1px solid rgb(96, 96, 96);
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+}
+
+.form input:hover + label:before {
+    
+    border-radius: 3px ;
+    background-color: #ff0000 ;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+
+}*/
+.container-label{
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    color:#edecf5;
+    font-weight: 300;
+    font-size: 15pt;
+    font-weight: 500;
+  }
+  
+  .container-label input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    align-items: center;
+  }
+  
+  .checkmark{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #edecf5;;
+    border: 1px solid gray;
+    border-radius: 2px;
+    align-items: center;  
+  }
+
+  .container-label input:checked ~ .checkmark{
+    background-color:#29ABAC;
+    border: none;
+    align-items: center; 
+    
+    
+  }
+  
+  .checkmark::after{
+    display: none;
+    content: '';
+    position: absolute;
+    align-items: center;
+  }
+  
+  .container-label .checkmark::after{
+    content: '';
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 9px;
+    transform: rotate(45deg);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    align-items: center;
+  }
+  
+  .container-label input:checked ~ .checkmark::after{
+    display: block; 
+  }
+
+
+.togCheck { display: none; }
+
+.togContent {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height .5s;
+}
+/* (C) SHOW CONTENT WHEN CHECKED */
+.togCheck:checked + .togContent {
+    max-height: 10vh; 
+    opacity: 1;
+    visibility: visible;
+}
+   
+
+.togButton {
+    display: block;
+    width: 0vh;
+    padding: 5px;
+    color: #000;
+}
+
+.togContent p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    padding: 5px 5px;
+    margin: 0;
+    color: #ffffff;
+    user-select: none;
+}
+
+.time-svg {
+    fill: #edecf5;
+    height: 40px;
+    width: 40px;
+}
+  

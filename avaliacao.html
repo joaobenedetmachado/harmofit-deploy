@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarmoFit</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans:wght@500&display=swap');
+        body {
+        background-color:#edecf5;;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17pt;
+        margin: 0;
+    }
+header {
+        color: white;
+        height: 150px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 1px 0px 10px 8px rgba(0, 0, 0, 0.75);
+    }
+
+.pqaval {
+        justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        margin-top: 30%;
+
+    }
+.input-pq {
+        
+        position: relative;
+        margin: auto;
+        border: none;
+        height: 100px;
+        width: 80%;
+        border-radius: 9px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15pt;
+        resize: none;
+        display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+        justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.25);
+        
+    }
+.p {
+    margin-top: 2%;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    user-select: none;
+}
+    
+.pergunta1 {
+        margin: 10px;
+        display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+        justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        color: rgb(0, 0, 0);
+        user-select: none;
+    }
+.logo {
+        margin-left: 75%;
+        position: absolute;
+        width: 78px;
+        height: 24px;
+        left: 5px;
+        top: 5px;
+    }
+
+    /*---------------------------BOTAO LIKE-------------------------*/
+
+.button-like {
+    background-color: #ffffff00;
+    border: none;
+    width: 80px; /*BOTAO NORMAL*/ 
+    height: 80px; /*BOTAO NORMAL*/
+
+}
+.button-like:active {
+    background-image: url(./midias/like-img.png);
+    width: 80px; /*BOTAO ATIVO*/ 
+    height: 80px; /*BOTAO ATIVO*/
+    
+}
+.like-div {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.like-png {
+    margin-left: -10px;
+    width: 80px;
+    height: 80px;
+}
+/*---------------------------BOTAO LIKE-------------------------*/
+
+
+
+/*---------------------------BOTAO DISLIKE-------------------------*/
+.dislike-png {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+}
+.button-dislike {
+    background-color:#edecf5;
+    border: none;
+    width: 80px; /*BOTAO NORMAL*/
+    height: 80px; /*BOTAO NORMAL*/
+}
+
+.button-dislike:active {
+    
+    width: 80px; /*BOTAO ATIVO*/
+    height: 80px; /*BOTAO ATIVO*/
+}
+
+.dislike-div {
+    
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(https://www.nicepng.com/png/detail/341-3416460_iphone-iphoneography-emoji-like-followme-ip-ajfonxd-love.png);
+}
+
+/*---------------------------BOTAO DISLIKE-------------------------*/
+
+.area-aval {
+    height: 80px;
+    width: 100%;
+    margin-top:35px;
+    display: inline-block;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+
+}
+
+
+.voltar {
+    width: 50px;
+}
+.voltar-btn {
+    background-color: #000000;
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-bottom-right-radius: 9px;
+    box-shadow: 1px 0px 10px 6px rgba(0, 0, 0, 0.405);
+    margin-top: 10px;
+
+}
+
+.voltar-seta {
+    margin-left: -5px;
+    height: 40px;
+    width: 40px;
+
+}
+
+.confirmar {
+    margin-top: 20%;
+    display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+    justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+    align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+}
+
+.confirmar-btn {
+    border: none;
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 12px;
+    font-size: 14pt;
+    font-weight: bolder;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.25);
+}
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        
+    <header>
+        <div class="voltar">
+            <button class="voltar-btn" onclick="login()">
+                <img class='voltar-seta'src="./arrow-left.png" alt="">
+            </button>
+        </div>
+        <div class="p">Formulário de avaliação</div>
+    </header>
+        
+        <div class="pqaval">
+            <div class="pergunta1">
+                Como poderiamos melhorar?
+            </div>
+            <textarea cols="30" rows="5" class="input-pq" minlength="5" maxlength="50" placeholder="Escreva seu FeedBack"></textarea>
+        </div>
+    </div>
+    <div class="logo1">
+        <img src="./logon2.webp" class="logo">
+    </div>
+
+    <div class="area-aval">
+        <div class="like-div">
+            <button class="button-like" id="likecount" onclick="like()">
+            <img class='like-png'src="./dislike-img.png" style="transform: rotate(180deg)" alt=""></button>
+        </div>
+
+
+        <div class="dislike-div">
+            <button class="button-dislike" id="dislikecount"  onclick="dislike()">
+            <img class='dislike-png' src="./dislike-img.png" alt=""></button>
+        </div>
+    </div>
+  
+    <div class="confirmar">
+        <button class="confirmar-btn" id="acaoa" onclick="obrigado()">Confirmar</button>
+    </div>    
+    </div>
+    <script src="index.js"></script>
+     
+
+</body>
+</html>

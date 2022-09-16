@@ -1,0 +1,432 @@
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarmoFit</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans:wght@500&display=swap');
+       * {
+        user-select: none;
+       } 
+       
+       body {
+            margin: 0;
+            background-color: #29ABAC;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .esquleto {
+        display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+        justify-content: flex-start;  /*CENTRALIZAR NO MEIO DA BOX*/
+        align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+        position: absolute;
+        height: 650px;
+        top: -240px;
+        margin-top: 325px; /* e retrocede metade da altura */
+  
+        
+
+        }
+        .p{
+            position: absolute;
+        }
+
+        .header {
+            color:#edecf5;
+            background-color: black ;
+            width: 100%;
+            height: 140px;
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18pt;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 1px 0px 10px 8px rgba(0, 0, 0, 0.75);
+        }
+
+        .logo {
+            position: absolute;
+            width: 78px;
+            height: 24px;
+            left: 5px;
+            top: 5px;
+        }
+
+        .input-ombro {
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            position: absolute;
+            top: -560px;
+            margin-top: 740px; /* e retrocede metade da altura */
+            margin-left: 60px; /* e retrocede metade da largura */
+        }
+
+        .ombro {
+            background-color: #29acac5b;
+            height: 40px;
+            width: 50px;
+            border-radius: 15px;
+            border: solid 4px rgb(0, 0, 0);
+
+        }
+        .ombro:active {
+            height: 40px;
+            width: 50px;
+            border-radius: 90px;
+            border: solid .5px rgb(0, 0, 0);
+        }
+
+        .input-joelho {
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            position: absolute;
+            top: -228px;
+            margin-top: 740px; /* e retrocede metade da altura */
+            margin-left: 65px; /* e retrocede metade da largura */
+        }
+
+        .joelho {
+            background-color: #29acac5b;
+            height: 40px;
+            width: 50px;
+            border-radius: 15px;
+            border: solid 4px rgb(0, 0, 0);
+        }
+
+        .joelho:active {
+            background-color: #29acac5b;
+            height: 40px;
+            width: 50px;
+            border-radius: 15px;
+            border: solid 2px rgb(0, 0, 0);
+
+        }
+
+        .input-costas {
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            position: absolute;
+            top: -450px;
+            margin-top: 740px; /* e retrocede metade da altura */
+            margin-left: 85px; /* e retrocede metade da largura */
+        }
+
+        .costas {
+            background-color: #29acac5b;
+            height: 40px;
+            width: 50px;
+            border-radius: 15px;
+            border: solid 4px rgb(0, 0, 0);
+           
+        }
+        .costas:active {
+            background-color: #29acac5b;
+            height: 40px;
+            width: 50px;
+            border-radius: 15px;
+            border: solid 2px rgb(0, 0, 0);
+        }
+
+        .continuar-btn {
+            height: 40px;
+            width: 100%;
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: flex-end;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            position: absolute;
+            bottom: 40px;
+
+            
+        }
+        .continuar {
+            height: 60px;
+            width: 45%;
+            color: #edecf5;;
+            background-color: black;
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            border-radius: 9px;
+            font-size: 20px;
+            user-select: none;
+        }
+        .continuar:active {
+            
+            height: 60px;
+            width: 45%;
+            color: #edecf5;
+            background-color: rgb(49, 49, 49);
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            border-radius: 9px;
+            transition: background 0.4s;
+        }
+
+        .area-dores {
+            height: 40px;
+            width: 100%;
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: flex-end;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            position: absolute;
+            bottom: 140px;
+
+        }
+        .area-dores1 {
+            height: 40px;
+            width: 100%;
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: flex-end;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            position: absolute;
+            bottom: 100px;
+
+        }
+        .dores{
+            height: 30px;
+            width:45% ;
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255);
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            border-radius: 4px;
+            box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.25);
+            font-weight: 800;
+            font-size: large;
+        }
+        .dores1 {
+            height: 30px;
+            width:45% ;
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255);
+            display: flex; /*CENTRALIZAR NO MEIO DA BOX*/
+            justify-content: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            align-items: center;  /*CENTRALIZAR NO MEIO DA BOX*/
+            border-radius: 4px;
+            box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.25);
+            font-weight: 800;
+            font-size: large;
+        }
+
+        .voltar {
+            width: 50px;
+        }
+        .voltar-btn {
+            background-color: #000000;
+            width: 60px;
+            height: 40px;
+            border: none;
+            border-bottom-right-radius: 9px;
+            box-shadow: 1px 0px 10px 6px rgba(0, 0, 0, 0.405);
+            margin-top: 10px;
+            position: absolute;
+        }
+
+        .voltar-seta {
+            margin-left: -5px;
+            height: 40px;
+            width: 40px;
+
+        }
+
+.switch__container {
+  margin: 15px auto;
+  width: 0px;
+}
+
+.switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+.switch-ombro + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.switch--shadow-ombro + label {
+  padding: 2px;
+  width: 55px;
+  height: 25px;
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+.switch--shadow-ombro + label:before,
+.switch--shadow-ombro + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow-ombro + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.switch--shadow-ombro + label:after {
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow-ombro:checked + label:before {
+  background-color: #8ce196;
+}
+.switch--shadow-ombro:checked + label:after {
+  transform: translateX(30px);
+}
+
+.switch-costas + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.switch--shadow-costas + label {
+  padding: 2px;
+  width: 55px;
+  height: 25px;
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+.switch--shadow-costas + label:before,
+.switch--shadow-costas + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow-costas + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.switch--shadow-costas + label:after {
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow-costas:checked + label:before {
+  background-color: #8ce196;
+}
+.switch--shadow-costas:checked + label:after {
+  transform: translateX(30px);
+}
+
+/*===================================================*/
+
+.switch-joelho + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.switch--shadow-joelho + label {
+  padding: 2px;
+  width: 55px;
+  height: 25px;
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+.switch--shadow-joelho + label:before,
+.switch--shadow-joelho + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.switch--shadow-joelho + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  transition: background 0.4s;
+}
+.switch--shadow-joelho + label:after {
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow-joelho:checked + label:before {
+  background-color: #8ce196;
+}
+.switch--shadow-joelho:checked + label:after {
+  transform: translateX(30px);
+}
+    </style>
+</head>
+<body>
+    <div class="voltar">
+        <button class="voltar-btn" onclick="voltar()">
+            <img class='voltar-seta'src="./arrow-left.png" alt="">
+        </button>
+    </div>
+    <div class="cont">
+        <img src="./esqueleto.png" class="esquleto">
+        <div class="input-ombro">
+            <input id="switch-shadow-ombro" class="switch switch--shadow-ombro" type="checkbox" onclick="addombro(), x()" ondblclick="console.log('oi')">
+            <label for="switch-shadow-ombro"></label>
+        </div>
+        <div class="input-joelho">
+            <input id="switch-shadow-joelho" class="switch switch--shadow-joelho" type="checkbox" onclick="addjoelho(), x()">
+            <label for="switch-shadow-joelho"></label>
+        </div>
+        <div class="input-costas">
+            <input id="switch-shadow-costas" class="switch switch--shadow-costas" type="checkbox" onclick="addcostas(), x()">
+            <label for="switch-shadow-costas"></label>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</div>
+    
+    <div class="header">
+         <div class="p">Selecione o local da dor</div>
+    </div>
+
+    <div class="continuar-btn">
+        <div class="continuar" id='acao' onclick="proxpag()">Contiunuar</div>
+    </div>
+    <div class="area-dores">
+        <div id='dor1' class="dores"></div>
+    </div>
+    <div class="area-dores1">
+        <div id='dor2' class="dores1"></div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+
+</script>
+</body>
+</html>
